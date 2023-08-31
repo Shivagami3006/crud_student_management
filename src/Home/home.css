@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Alata&family=Crimson+Text&family=Josefin+Sans&family=Montserrat:wght@100;300;600&family=Neucha&family=Roboto:ital,wght@0,400;0,500;1,300;1,700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url("https://images.pexels.com/photos/16710693/pexels-photo-16710693/free-photo-of-a-rocky-cliff-at-sunset.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+main.table {
+  width: 82vw;
+  height: 90vh;
+  background-color: #fff5;
+  backdrop-filter: blur(7px);
+  box-shadow: 0.4rem .8rem #0005;
+  border-radius: .8rem;
+  overflow: hidden;
+
+}
+
+.table_header {
+  width: 100%;
+  height: 10%;
+  background-color: #fff4;
+  padding: .8rem 1rem;
+  text-align: center;
+}
+
+.table_body {
+  width: 95%;
+  min-height: calc(89%b- .8rem);
+  background-color: #fffb;
+  margin: 0.8rem auto;
+  border-radius: .6rem .6rem;
+  overflow: auto;
+
+}
+
+.table_body::-webkit-scrollbar {
+  width: 0.5rem;
+  height: 0.5rem;
+}
+
+.table_body::-webkit-scrollbar-thumb {
+  border-radius: .5rem;
+  background-color: #0004;
+  visibility: hidden;
+
+}
+
+.table_body:hover::-webkit-scrollbar-thumb {
+  visibility: visible !important;
+}
+thead th{
+  position: sticky;
+  top:0;
+  left: 0;
+  background-color: #d5d1defe;
+}
+
+
+table,
+th,
+td {
+  padding: 1rem;
+  border-collapse: collapse!important;
+}
+table{
+  width: 100%;
+}
+tbody tr:nth-child(even){
+  background-color: #0000000b;
+}
+tbody tr:hover{
+  background-color:#b9cded ;
+}
+tbody tr td{
+  line-height:.5rem ;
+}
+.staus{
+  background-color: aqua;
+  text-decoration: none;
+  padding: 12px ;
+  border-radius: 8px;
+  text-align: center;
+
+}
+.staus1{
+  background-color:red;
+  text-decoration: none;
+  padding: 16px 0 ;
+  border-radius: 8px;
+  text-align: center;
+
+}
+.staus2{
+  background-color:green!important;
+  text-decoration: none;
+  padding: 16px 0 ;
+  border-radius: 8px;
+  text-align: center;
+
+}

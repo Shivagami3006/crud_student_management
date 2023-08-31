@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Crimson+Text&family=Josefin+Sans&family=Montserrat:wght@100;300;600&family=Neucha&family=Poppins:wght@300&family=Roboto:ital,wght@0,400;0,500;1,300;1,700&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+    min-height: 100vh;
+    width: 500px;
+    background-color: rgb(1, 93, 206) !important;
+}
+.wrapper{
+    width: 500px;
+    background: rgb(115, 199, 115) !important;
+    color:#fff;
+}
+.wrapper h2{
+font-size: 36px;
+text-align: center;
+}
+.input-box{
+    width: 100%;
+    height: 50px;
+    background: salmon;
+    margin: 30px 0;
+
+}
+input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+}
