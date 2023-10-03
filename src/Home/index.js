@@ -41,7 +41,11 @@ function Home() {
   return (
     <main className="table">
       <section className="table_header">
-        <h2>Students Management</h2>
+        <div className="head"> Students Management
+        <Link to="/create" className="staus2">
+          create+
+        </Link>
+        </div>
       </section>
       <section className="table_body">
         <table>
@@ -52,6 +56,7 @@ function Home() {
               <th>Age</th>
               <th>City</th>
               <th>Edit</th>
+              <th>View</th>
               <th>Delete</th>
             </tr>
           </thead>
@@ -69,6 +74,11 @@ function Home() {
                   </Link>
                 </td>
                 <td>
+                  <Link to={`/view/${data.id}`} className="staus view">
+                    view
+                  </Link>
+                </td>
+                <td>
                   <p className="staus1" onClick={(_e) => handleDelete(data.id)}>
                     Delete
                   </p>
@@ -77,11 +87,6 @@ function Home() {
             ))}
           </tbody>
         </table>
-        <div className="">
-        <Link to="/create" className="staus2">
-          create+
-        </Link>
-      </div>
 
       </section>
     </main>
