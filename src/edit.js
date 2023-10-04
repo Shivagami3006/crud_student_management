@@ -12,7 +12,7 @@ function Edit(props) {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const apiUrl = "http://64eb3675e51e1e82c5771731.mockapi.io/users";
+    const apiUrl = "https://64eb3675e51e1e82c5771731.mockapi.io/users";
     axios
       .put(`${apiUrl}/${myid}`, value)
       .then((res) => {

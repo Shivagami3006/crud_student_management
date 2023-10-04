@@ -8,7 +8,7 @@ function View() {
   const params = useParams();
   const { id } = params;
 
-    const apiUrl = "http://64eb3675e51e1e82c5771731.mockapi.io/users";
+    const apiUrl = "https://64eb3675e51e1e82c5771731.mockapi.io/users";
 useEffect(()=>{
     axios.get(`${apiUrl}/${+id}`)
     .then(res =>{console.log(res.data)

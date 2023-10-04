@@ -30,7 +30,7 @@ function Home() {
   const handleDelete = async (id) => {
     try {
       // await axios.delete("http://localhost:5000/users/" + id);
-      const apiUrl = "http://64eb3675e51e1e82c5771731.mockapi.io/users";
+      const apiUrl = "https://64eb3675e51e1e82c5771731.mockapi.io/users";
       await axios.delete(`${apiUrl}/${id}`);
       setStudent(student.filter((data) => data.id !== id));
     } catch (err) {
