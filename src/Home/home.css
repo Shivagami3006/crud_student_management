@@ -30,7 +30,7 @@ main.table {
   backdrop-filter: blur(7px);
   box-shadow: 0.4rem .8rem #0005;
   border-radius: .8rem;
-  overflow: hidden;
+  overflow-x: auto;
 
 }
 
@@ -43,7 +43,7 @@ main.table {
   
 }
 
-.table_body {
+tbody {
   width: 95%;
   min-height: calc(89%b- .8rem);
   background-color: #fffb;
@@ -52,19 +52,20 @@ main.table {
   overflow: auto;
 }
 
-.table_body::-webkit-scrollbar {
-  width: 0.5rem;
-  height: 0.5rem;
+tbody::-webkit-scrollbar {
+  width: 100%;
+  min-height: 300px;
+  max-height: 300px;
 }
 
-.table_body::-webkit-scrollbar-thumb {
+tbody::-webkit-scrollbar-thumb {
   border-radius: .5rem;
   background-color: #0004;
   visibility: hidden;
 
 }
 
-.table_body:hover::-webkit-scrollbar-thumb {
+tbody:hover::-webkit-scrollbar-thumb {
   visibility: visible !important;
 }
 thead th{

@@ -39,15 +39,15 @@ function Home() {
   };
 
   return (
-    <main className="table">
-      <section className="table_header">
+    <main className="table ">
+      <section className="table_header ">
         <div className="head"> Students Management
         <Link to="/create" className="staus2">
           create+
         </Link>
         </div>
       </section>
-      <section className="table_body">
+      <section className="table_body ">
         <table>
           <thead>
             <tr>
